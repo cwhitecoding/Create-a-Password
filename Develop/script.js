@@ -19,13 +19,13 @@ function generatePassword(generateBtn) {
   // Collects user inputs as data to create the right password
   var lengthPrompt = prompt ("How long would you like your password to be?\nMin: 8 - Max: 128");
   
-  //
+  // Parameters for password length error checking
   if (lengthPrompt < 8 || lengthPrompt > 128) {
     alert ("Error. Please enter a number within parameters.");
     return "Error";
   } 
 
-  // 
+  // Prompted for user input criteria
   var lowercaseP = confirm ("Would you like to use lower case letters?\nClick 'OK' for yes, 'Cancel' for no.");
   var upperCase = confirm ("Would you like to use upper case letters?\nClick 'OK' for yes, 'Cancel' for no.");
   var numbersP = confirm ("Would you like to use numbers?\nClick 'OK' for yes, 'Cancel' for no.");
@@ -37,7 +37,7 @@ function generatePassword(generateBtn) {
   var numbers = "1234567890";
   var symbols = "!@#$%^&*(_-+=[{];:?/.>,<`~";
 
-  // 
+  // Created a large string of characters to be used in the password
   var selectedCriteria = "";
 
   // IF statement confirming password is within correct parameters
@@ -58,10 +58,10 @@ function generatePassword(generateBtn) {
     selectedCriteria += symbols
   }
 
-  // 
+  // Variable for specific characters to be used in the password
   var selectedChar = "";
-  
-  // Probably need a for loop for something.. run numbers and generate?
+
+  // For loop to create password with selected parameters
   for (var i=0; i < lengthPrompt; i++) {
     var randomIndex = Math.floor(Math.random() * selectedCriteria.length);
     selectedChar += selectedCriteria[randomIndex];
