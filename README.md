@@ -27,8 +27,8 @@ N/A
 
 ## Tests
 
-Button initiates prompts -> Check: good
-Improper input causes error -> Check: good
-Prompts provide input criteria -> Check: good
-Generated password is displayed -> Check: good
-Generated password meets input criteria -> Check: good
+Button initiates prompts -> Check: good.
+Improper input causes error -> Check: good.
+Prompts provide input criteria -> Check: good.
+Generated password is displayed -> Check: good.
+Generated password meets input criteria -> Check: good.
